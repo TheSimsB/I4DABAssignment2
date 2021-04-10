@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 
@@ -12,9 +13,11 @@ namespace I4DAB___Assignment_2
 
         public string ClinicianName { get; set; }
 
-        public BirthClinic ClinicID { get; set; }
+        [ForeignKey("ClinicID")]
+        public BirthClinic Clinic { get; set; }
+        [ForeignKey("ScheduleID")]
 
-        public Schedule ScheduleID { get; set; }
+        public Schedule Schedule { get; set; }
     }
 
 }

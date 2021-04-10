@@ -8,6 +8,6 @@ namespace I4DAB___Assignment_2
     public class MaternityRoom
     {
         [ForeignKey("RoomID")]
-        public Room MaternityRoomID { get; set; }
+        public Room MaternityRoom { get; set; }
     }
 }

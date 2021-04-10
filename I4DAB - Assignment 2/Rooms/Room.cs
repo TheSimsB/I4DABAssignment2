@@ -10,9 +10,5 @@ namespace I4DAB___Assignment_2
         public int RoomID { get; set; }
 
         public string RoomName { get; set; }
-
-       
-
-
     }
 }
